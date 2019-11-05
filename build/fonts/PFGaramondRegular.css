@@ -1,0 +1,10 @@
+@font-face {
+    font-family:'PFGaramondRegular';
+    src: url('/fonts/PFGaramondClassicDisplay-Regular.eot');
+    src: local('/fonts/PFGaramondClassicDisplay-Regular'),
+        url('/fonts/PFGaramondClassicDisplay-Regular.eot?#iefix') format('embedded-opentype'),
+        url('/fonts/PFGaramondClassicDisplay-Regular.woff2') format('woff2'),
+        url('/fonts/PFGaramondClassicDisplay-Regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}

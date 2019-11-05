@@ -1,0 +1,409 @@
+/*= ../../bower_components/owl.carousel/dist/assets/owl.carousel.min.css*/
+
+
+/*= ../../bower_components/owl.carousel/dist/assets/owl.theme.default.css*/
+
+@import "partials/vars";
+@import "partials/mixin";
+@import "partials/default.scss";
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+*:before,
+*:after {
+    box-sizing: border-box;
+}
+
+a {
+    text-decoration: none;
+    color: $color-dark;
+}
+
+p {
+    margin: 0px 0px 10px;
+}
+
+body {
+    font-family: $font-main;
+    min-width: 320px;
+    font-size: rem(18px);
+    line-height: normal;
+    background-color: #ffffff;
+    color: $color-dark;
+}
+
+.wrapper {
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+.main {
+    position: relative;
+    flex: 1;
+    /* for center*/
+    align-items: center;
+    justify-content: center;
+}
+
+.d-flex {
+    display: flex;
+}
+
+.wrap {
+    flex-wrap: wrap;
+}
+
+a,
+button {
+    cursor: pointer;
+    border: none;
+    background: transparent;
+    display: inline-block;
+    outline: none;
+}
+
+.responsive-img {
+    max-width: 100%;
+    height: auto;
+}
+
+.overflow {
+    overflow: hidden;
+}
+
+.container {
+    width: 1310px;
+    max-width: 100%;
+    margin: 0 auto;
+    padding-left: $spacing;
+    padding-right: $spacing;
+}
+
+.container-fluid {
+    width: 100%;
+    margin: 0 auto;
+    padding-left: $spacing;
+    padding-right: $spacing;
+}
+
+.row {
+    margin-left: -$spacing;
+    margin-right: -$spacing;
+    list-style: none;
+}
+
+.col {
+    padding-left: $spacing;
+    padding-right: $spacing;
+}
+
+.col-1 {
+    width: 8.33333333%;
+}
+
+.col-2 {
+    width: 16.66666667%;
+}
+
+.col-3 {
+    width: 25%;
+}
+
+.col-4 {
+    width: 33.33%;
+}
+
+.col-5 {
+    width: 41.66666667%;
+}
+
+.col-6 {
+    width: 50%;
+}
+
+.col-7 {
+    width: 58.33%;
+}
+
+.col-8 {
+    width: 66.66%;
+}
+
+.col-9 {
+    width: 75%;
+}
+
+.col-10 {
+    width: 83.33%;
+}
+
+.col-11 {
+    width: 91.66%;
+}
+
+.col-12 {
+    width: 100%;
+}
+
+.col-20 {
+    width: 20%;
+}
+
+h1 {
+    font-size: rem(42px);
+    line-height: normal;
+    margin-top: 10px;
+    margin-bottom: 15px;
+    font-family: $font-main;
+    font-weight: 900;
+    letter-spacing: 0.020em;
+}
+
+h2 {
+    font-size: rem(32px);
+    line-height: normal;
+    margin-top: 10px;
+    margin-bottom: 15px;
+    font-family: $font-main;
+    letter-spacing: 0.020em;
+}
+
+h3 {
+    font-size: rem(30px);
+    line-height: normal;
+    margin-top: 10px;
+    margin-bottom: 20px;
+    font-family: $font-main;
+}
+
+h4 {
+    font-size: rem(28px);
+    line-height: normal;
+    margin-top: 10px;
+    margin-bottom: 15px;
+    font-family: $font-main;
+}
+
+h5 {
+    font-size: rem(22px);
+    line-height: normal;
+    margin-top: 10px;
+    margin-bottom: 15px;
+    font-family: $font-main;
+}
+
+h6 {
+    font-size: rem(20px);
+    line-height: normal;
+    margin-top: 5px;
+    margin-bottom: 10px;
+    font-family: $font-main;
+}
+
+.title {
+    color: $color-dark;
+    &_h1 {
+        @extend h1;
+    }
+    &_h2 {
+        @extend h2;
+    }
+    &_h3 {
+        @extend h3;
+    }
+    &_center {
+        text-align: center;
+    }
+}
+
+ul,
+ol {
+    margin-left: 20px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+li {
+    margin-bottom: 10px;
+}
+
+.box-center {
+    text-align: center;
+}
+
+
+/* owl */
+
+.owl-stage-outer {
+    overflow: hidden;
+}
+
+.owl-slider:not(.owl-loaded) {
+    opacity: 0;
+}
+
+.owl-slider {
+    position: relative;
+    opacity: 1;
+}
+
+.owl-stage {
+    display: flex;
+}
+
+.owl-item {
+    display: flex;
+    justify-content: center;
+    margin: 0px 25px 53px;
+}
+
+.owl-item img {
+    width: 100%;
+}
+
+.owl-nav button {
+    font-size: 0;
+    width: 11px;
+    height: 19px;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 100%;
+}
+
+.owl-prev {
+    background-image: url(../img/prev-arrow.png);
+}
+
+.owl-next {
+    background-image: url(../img/next-arrow.png);
+}
+
+.owl-dots .owl-dot {
+    margin: 0 4px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+
+.owl-dot span {
+    width: 8px;
+    height: 8px;
+    background-color: #fff;
+    border-radius: 50%;
+    border: 2px solid #a8aab7;
+}
+
+.owl-dot.active span {
+    background-color: #a8aab7;
+}
+
+.news {
+    padding: 50px 0px 50px;
+    width: 100%;
+    &__subtitle {
+        text-align: center;
+        margin: 0 auto;
+        max-width: 45%;
+        font-family: $font-garamond;
+        line-height: rem(26px);
+        letter-spacing: 0.020em;
+        font-weight: 400;
+    }
+    &__item {
+        background-color: #fff;
+        max-width: 347px;
+        box-shadow: 0px 3px 5px 0px rgba(35, 35, 35, 0.12), 0px 10px 24px 0px rgba(0, 0, 0, 0.25);
+    }
+    &__container {
+        width: 1450px;
+    }
+    &__content {
+        padding: 21px 20px 20px 30px;
+    }
+    &__carousel {
+        margin: 43px auto 0px;
+        max-width: 1360px;
+        padding: 0px 65px;
+    }
+    &__image {
+        object-fit: cover;
+        max-width: 347px;
+    }
+    &__time {
+        margin: 0px;
+        font-size: rem(11px);
+        font-weight: 300;
+        letter-spacing: 0.020em;
+        text-transform: uppercase;
+    }
+    &__name {
+        font-size: rem(14px);
+        line-height: rem(20px);
+        letter-spacing: 0.020em;
+        font-weight: 900;
+    }
+    &__header {
+        align-items: center;
+        margin: 0px 0px 6px;
+    }
+    &__icon {
+        width: 18px;
+        height: 18px;
+        fill: #E0E0E0;
+        margin-right: 9px;
+        transition: fill .4s cubic-bezier(.25, .46, .45, .94);
+    }
+    &__bottom {
+        justify-content: center;
+        align-items: center;
+    }
+    &__dots {
+        padding: 0px 76px 0px;
+    }
+}
+
+
+/* hovers */
+
+.news__item:hover .news__icon {
+    fill: #1f5dea;
+    transition: fill .4s cubic-bezier(.25, .46, .45, .94);
+}
+
+.news__item:hover {
+    box-shadow: 0px 3px 11px 0px rgba(35, 35, 35, 0.12), 0px 10px 34px 0px rgba(0, 0, 0, 0.25);
+}
+
+.owl-nav button:hover {
+    opacity: .8;
+}
+
+@media screen and (max-width: 1310px) {
+    .container {
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 767px) {
+    :root {
+        font-size: 14px;
+    }
+    .news__dots {
+        padding: 0px 40px;
+    }
+    .news__subtitle {
+        max-width: 100%;
+    }
+    .news__carousel {
+        padding: 0px 0px;
+    }
+    .news__content {
+        padding: 15px 15px;
+    }
+}
